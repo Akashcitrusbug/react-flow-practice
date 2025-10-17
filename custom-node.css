@@ -1,0 +1,148 @@
+/* Custom Node Styles */
+.custom-node {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #4a5568;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.custom-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  border-color: #667eea;
+}
+
+.custom-node.selected {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+}
+
+/* Start Node Style */
+.start-node {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: 2px solid #2b6cb0;
+}
+
+.start-node::before {
+  content: "🚀";
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* Process Node Style */
+.process-node {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  border: 2px solid #e53e3e;
+}
+
+.process-node::before {
+  content: "⚙️";
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* End Node Style */
+.end-node {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border: 2px solid #38b2ac;
+  color: #2d3748;
+}
+
+.end-node::before {
+  content: "🏁";
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* Decision Node Style */
+.decision-node {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border: 2px solid #ed8936;
+  color: #2d3748;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decision-node::before {
+  content: "?";
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+}
+
+/* Node Handle Styles */
+.react-flow__handle {
+  width: 12px;
+  height: 12px;
+  background: #4a5568;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.react-flow__handle-top {
+  top: -6px;
+}
+
+.react-flow__handle-bottom {
+  bottom: -6px;
+}
+
+.react-flow__handle-left {
+  left: -6px;
+}
+
+.react-flow__handle-right {
+  right: -6px;
+}
+
+.react-flow__handle-connecting {
+  background: #ffd700;
+  border-color: #ffd700;
+}
+
+.react-flow__handle-valid {
+  background: #48bb78;
+  border-color: #48bb78;
+}
+
+/* Edge Styles */
+.react-flow__edge-path {
+  stroke: #4a5568;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #ffd700;
+  stroke-width: 3;
+}
+
+.react-flow__edge-text {
+  fill: #4a5568;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Connection Line Styles */
+.react-flow__connection-line {
+  stroke: #ffd700;
+  stroke-width: 2;
+  stroke-dasharray: 5, 5;
+}

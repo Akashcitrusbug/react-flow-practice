@@ -1,0 +1,384 @@
+/* Workflow Node Styles - Matching the Professional Look */
+
+.workflow-node {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  min-width: 180px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.workflow-node:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #cbd5e0;
+}
+
+.workflow-node.selected {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+.node-content {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.node-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.node-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.node-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d3748;
+  line-height: 1.2;
+}
+
+.node-subtitle {
+  font-size: 12px;
+  color: #718096;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.node-count {
+  font-size: 12px;
+  color: #4a5568;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.node-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.dropdown-arrow {
+  color: #a0aec0;
+  font-size: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dropdown-arrow:hover {
+  color: #4a5568;
+}
+
+.add-button {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-button:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+  color: #2d3748;
+}
+
+/* Specific Node Type Styles */
+
+.script-node {
+  /* Default styling already applied */
+}
+
+.data-node {
+  /* Slightly wider for data node */
+  min-width: 200px;
+}
+
+.process-node {
+  /* Simpler styling for process nodes */
+  min-width: 120px;
+}
+
+.image-mask-node {
+  /* Default styling */
+}
+
+.image-mask-node.highlighted {
+  border-color: #3182ce;
+  border-width: 2px;
+  background: #f7fafc;
+}
+
+.output-node {
+  /* Default styling */
+}
+
+/* Icon Styles */
+
+.code-icon {
+  font-family: monospace;
+  font-size: 12px;
+  color: #4a5568;
+  font-weight: bold;
+}
+
+.database-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.db-cylinder {
+  width: 12px;
+  height: 8px;
+  background: #4a5568;
+  border-radius: 2px;
+}
+
+.circular-arrow {
+  font-size: 16px;
+  color: #4a5568;
+  transform: rotate(180deg);
+}
+
+.wrench-icon {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+/* Handle Styles */
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.react-flow__handle-connecting {
+  background: #3182ce;
+}
+
+.react-flow__handle-valid {
+  background: #48bb78;
+}
+
+/* Edge Styles */
+
+.react-flow__edge-path {
+  stroke: #a0aec0;
+  stroke-width: 1.5;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3182ce;
+  stroke-width: 2;
+}
+
+.react-flow__edge-text {
+  fill: #4a5568;
+  font-size: 11px;
+  font-weight: 500;
+  background: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Connection Line */
+
+.react-flow__connection-line {
+  stroke: #3182ce;
+  stroke-width: 2;
+  stroke-dasharray: 5, 5;
+}
+
+/* Background */
+
+.react-flow__background {
+  background-color: #f8f9fa;
+}
+
+/* Controls Styling */
+
+.react-flow__controls {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__controls-button {
+  background: #ffffff;
+  border: none;
+  color: #4a5568;
+  transition: all 0.2s ease;
+}
+
+.react-flow__controls-button:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+/* MiniMap Styling */
+
+.react-flow__minimap {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* UI Elements */
+
+.top-ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.top-left-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.ui-icon {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ui-icon:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.bottom-ui {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.bottom-left {
+  display: flex;
+  align-items: center;
+}
+
+.logs-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4a5568;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logs-section:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.bottom-center {
+  display: flex;
+  align-items: center;
+}
+
+.run-workflow-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.run-workflow-btn:hover {
+  background: #1a202c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.run-workflow-btn span {
+  font-size: 12px;
+}
+
+.bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+.canvas-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.control-btn {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.control-btn:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+  color: #2d3748;
+}
